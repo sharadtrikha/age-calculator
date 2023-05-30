@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./style.css" />
+<script defer src="./script.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+<section class="age-calculator-section">
+  
+   <form id="calculator-form">
+      <section class="age-calculator-inputs">
+        <div class="form-input-element-section day-section">
+          <label class="form-input-element-label" for="day">Day</label>
+          <input class="form-input-element" id="day" type="text" placeholder="DD" />
+          <span class="error error-msg"> </span>
+        </div>
+        <div class="form-input-element-section month-section">
+         <label class="form-input-element-label" for="month">Month</label>
+          <input class="form-input-element" type="text" id="month" placeholder="MM" />
+          <span class="error error-msg"> </span>
+        </div>
+        <div class="form-input-element-section year-section">
+          <label class="form-input-element-label" for="year">Year</label>
+          <input class="form-input-element" type="text" id="year" placeholder="YYYY" />
+          <span class="error error-msg"> </span>
+        </div>
+      </section>
+    </form>
+
+
+    <section class="submit-arrow-section">
+      <button type="button" class="submit-arrow-btn">
+        <img class="submit-arrow" src="assets/images/icon-arrow.svg" />
+      </button>
+    </section>
+
+    <section class="display-result-section">
+      <section class="calculated-results years-section">
+        <div class="calculated-label calculated-years">--</div>
+        <div class="">years</div>
+      </section>
+      <section class="calculated-results months-section">
+        <div class="calculated-label calculated-months">--</div>
+        <div class="">months</div>
+      </section>
+      <section class="calculated-results days-section">
+        <div class="calculated-label calculated-days">--</div>
+        <div class="">days</div>
+      </section>
+    </section>
+   
+  
+
+</section>
+  
+</body>
+</html>

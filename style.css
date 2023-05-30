@@ -1,0 +1,175 @@
+/* Reset CSS Section */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    font-size: 100%;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    background-color: var(--off-white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* CSS Variables section */
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+}
+
+.age-calculator-section {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: var(--white);
+    margin: 1rem;
+    border-radius: 30px;
+    padding: 4rem 1rem;
+    border-bottom-right-radius: 100px;
+}
+
+.age-calculator-inputs {
+    display: flex;
+}
+
+.form-input-element-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input-element-label {
+    color: var(--smokey-grey);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0.5rem 0;
+}
+
+.form-input-element {
+    width: 70%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid var(--off-white);
+    outline: transparent;
+}
+
+.form-input-element:focus {
+    border-color: var(--purple);
+}
+
+.submit-arrow {
+    background-color: var(--purple);
+    border-radius: 50%;
+    padding: 1rem;
+    width: 5rem;
+}
+
+.submit-arrow:hover {
+    background-color: var(--off-black);
+}
+
+.submit-arrow-section {
+    /* border-bottom: 2px solid var(--off-white); */
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-arrow-section::before {
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: var(--off-white);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.submit-arrow-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0;
+}
+
+.display-result-section {
+    font-size: 3rem;
+}
+
+.calculated-results {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.calculated-label {
+    color: var(--purple);
+}
+
+.error-msg {
+    font-style: italic;
+}
+
+.error {
+    color: var(--light-red);
+}
+
+.error-input {
+    border-color: var(--light-red);
+}
+@media screen and (min-width: 1440px) {
+    .submit-arrow-section {
+        justify-content: flex-end;
+    }   
+
+    .age-calculator-section {
+        width: 50vw;
+        margin: auto;
+        padding: 4rem;
+    }
+
+    .submit-arrow-section {
+        margin: 0 0 2rem 0;
+    }
+}
